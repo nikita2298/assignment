@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- <p>summary works!</p> -->
+<div class="container">
+    <div>
+      <mat-card class="cards">
+        <mat-card-content>
+          <h3 class="confirm">Confirmed Cases</h3>
+          <h2 class="confirm">{{ summaryData[0].Confirmed }}</h2>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  
+    <div>
+      <mat-card class="cards">
+        <mat-card-content>
+          <h3 class="active">Active Cases</h3><br>
+          <h2 class="active">{{ summaryData[0].Active }}</h2>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div>
+      <mat-card class="cards">
+        <mat-card-content>
+          <h3 class="recover">Recovered Cases</h3>
+          <h2 class="recover">{{ summaryData[0].Recovered }}</h2>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  
+    <div>
+      <mat-card class="cards">
+        <mat-card-content>
+          <h3 class="deceased">Deceased Cases</h3>
+          <h2 class="deceased">{{ summaryData[0].Deceased }}</h2>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>

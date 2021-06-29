@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!-- <p>state works!</p> -->
+<br><br><br>
+<div class="container">
+  <div class="flex1">
+    <app-summary [summaryData]="summaryData"></app-summary> <br /><br />
+    <app-table
+      [tableData]="dataByState"
+      [displayedColumns]="displayedColumns"
+    ></app-table>
+  </div>
+
+  <div class="flex2">
+    <app-pie-chart></app-pie-chart>
+  </div>
+</div>

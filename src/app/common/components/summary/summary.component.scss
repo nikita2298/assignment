@@ -1,0 +1,19 @@
+
+.container{
+    //width:100%;
+    height: auto;
+    display: flex;
+    //flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    
+}
+.cards{
+    width:100px;
+    height:150px;
+    border:2px black solid;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- <p>country works!</p> -->
+<div>
+    <mat-form-field>
+        <mat-select
+          placeholder="Select State"
+          multiple
+          name="State"
+          (selectionChange)="changeAction($event)" [(ngModel)]="selectedValue"
+        >
+          <mat-option *ngFor="let item of dataSource" [value]="item.state">
+            {{ item.state }}</mat-option
+          >
+        </mat-select>
+      </mat-form-field> <br><br><br><br>
+
+
+</div>
+<div class="container">
+    <div class="flex1">
+
+        <app-summary [summaryData]="summaryData" ></app-summary><br><br><br>
+        <app-table [tableData] = "stateSum" [displayedColumns]="displayedColumns"></app-table>
+    </div><p></p><p></p>
+    <div class="flex2">
+        <app-line-chart></app-line-chart>
+    </div>
+
+</div>
+
